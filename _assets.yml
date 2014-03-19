@@ -1,0 +1,7 @@
+gzip_assets: off
+rewrite_relative_paths: off
+
+stylesheets:
+  screen:
+    - styles/normalize.css
+    - styles/main.css

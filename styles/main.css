@@ -1,0 +1,204 @@
+/* line 11, main.sass */
+body {
+  border-top: 2px solid #7f7f7f;
+  background-color: white;
+  color: #222222;
+  font: 400 100%/1.65 "Open Sans Condensed", "Helvetica", "Arial", sans-serif;
+  text-rendering: optimizeLegibility;
+  text-align: center;
+}
+
+/* line 19, main.sass */
+small {
+  font-size: 0.8em;
+}
+
+/* line 22, main.sass */
+strong {
+  font-weight: 700;
+}
+
+/* line 25, main.sass */
+a {
+  color: #7f7f7f;
+  text-decoration: none;
+  border-bottom: 1px dotted #f2f2f2;
+}
+
+/* line 30, main.sass */
+a:hover {
+  color: #b2b2b2;
+  border-bottom: 1px solid #f2f2f2;
+  -o-transition: 0.8s;
+  -ms-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+/* line 39, main.sass */
+::selection, ::-moz-selection {
+  background: #7f7f7f;
+  color: white;
+}
+
+/* line 43, main.sass */
+.wrapper {
+  max-width: 27em;
+  margin: 0 auto 0 auto;
+  padding: 0 1em 0 1em;
+}
+
+/* line 48, main.sass */
+.header {
+  padding: 0;
+  margin: 0 0 2.3em 0;
+  text-align: center;
+  border-bottom: 1px solid #f2f2f2;
+}
+/* line 53, main.sass */
+.header h1 {
+  font-size: 3em;
+  margin: 0.8em 0 0.8em 0;
+  padding: 0;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+/* line 59, main.sass */
+.header a {
+  color: black;
+}
+
+/* line 62, main.sass */
+.content {
+  margin: 0 0 2.3em 0;
+}
+
+/* line 65, main.sass */
+.content-header {
+  position: relative;
+  text-align: center;
+  margin-bottom: 3em;
+}
+/* line 69, main.sass */
+.content-header .title {
+  font-size: 2em;
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+/* line 74, main.sass */
+.content-header .subtitle {
+  position: absolute;
+  margin: 0;
+  top: -4.3em;
+  font-size: 0.9em;
+  font-weight: 300;
+  color: #b3b3b3;
+  text-transform: uppercase;
+  width: 100%;
+}
+/* line 75, main.sass */
+.content-header .subtitle .bg {
+  padding: 0 0.75em 0 0.75em;
+  background-color: white;
+}
+
+/* line 87, main.sass */
+.thumbnails {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 91, main.sass */
+.thumbnails li {
+  display: inline;
+}
+/* line 93, main.sass */
+.thumbnails li a {
+  border: none;
+}
+
+/* line 96, main.sass */
+.thumbnail img {
+  width: 90%;
+  margin: 0 0.5em 1em 0.5em;
+  padding: 0.5em;
+  border: 1px solid #f2f2f2;
+}
+
+/* line 102, main.sass */
+.full-size img {
+  width: 90%;
+  margin: 0 0.5em 1em 0.5em;
+  padding: 0.5em;
+  border: 1px solid #f2f2f2;
+}
+
+/* line 108, main.sass */
+.description {
+  margin: 0;
+  padding: 0;
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+
+/* line 114, main.sass */
+.navigation {
+  list-style: none;
+  margin: 2em 0 0 0;
+  padding: 0;
+}
+/* line 118, main.sass */
+.navigation li {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  display: inline;
+  margin: 0 1em 0 1em;
+}
+
+/* line 124, main.sass */
+.footer {
+  clear: both;
+  border-top: 1px solid #f2f2f2;
+  margin: 2.5em 0 0 0;
+  padding: 2.3em 0 4em 0;
+}
+
+/* line 130, main.sass */
+.colored {
+  color: #7f7f7f;
+}
+
+/* line 133, main.sass */
+.copyright {
+  font-size: 0.8em;
+  line-height: 1.65;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 465px) {
+  /* line 139, main.sass */
+  .thumbnail img {
+    width: 11.282em;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 143, main.sass */
+  body {
+    border-top: 4px solid #7f7f7f;
+    font-size: 125%;
+    line-height: 1.8;
+  }
+
+  /* line 148, main.sass */
+  .wrapper {
+    padding: 0 2em 0 2em;
+    max-width: 33em;
+  }
+
+  /* line 152, main.sass */
+  .thumbnail img {
+    width: 8.765em;
+  }
+}

@@ -1,0 +1,153 @@
+$highlight: #7f7f7f
+$highlight-hover: desaturate(lighten($highlight, 20%), 100%)
+$background: #fff
+$foreground: #222
+$medium-grey: darken($background, 30%)
+$light-grey: darken($background, 5%) 
+$dark-grey: darken($background, 70%)
+$regular-font-family: "Open Sans Condensed", "Helvetica", "Arial", sans-serif
+$transition-time: 0.8s
+
+body
+  border-top: 2px solid $highlight
+  background-color: $background
+  color: $foreground
+  font: 400 100%/1.65 $regular-font-family
+  text-rendering: optimizeLegibility
+  text-align: center
+
+small
+  font-size: 0.8em
+
+strong
+  font-weight: 700
+
+a
+  color: $highlight
+  text-decoration: none
+  border-bottom: 1px dotted $light-grey
+
+a:hover
+  color: $highlight-hover
+  border-bottom: 1px solid $light-grey
+  -o-transition: $transition-time
+  -ms-transition: $transition-time
+  -moz-transition: $transition-time
+  -webkit-transition: $transition-time
+  transition: $transition-time
+
+::selection, ::-moz-selection
+  background: $highlight
+  color: white
+
+.wrapper
+  max-width: 27em
+  margin: 0 auto 0 auto
+  padding: 0 1em 0 1em
+
+.header
+  padding: 0
+  margin: 0 0 2.3em 0
+  text-align: center
+  border-bottom: 1px solid $light-grey
+  h1
+    font-size: 3em
+    margin: 0.8em 0 0.8em 0
+    padding: 0
+    font-weight: 300
+    text-transform: uppercase
+  a
+    color: black
+
+.content
+  margin: 0 0 2.3em 0
+
+.content-header
+  position: relative
+  text-align: center
+  margin-bottom: 3em
+  .title
+    font-size: 2em
+    margin: 0
+    padding: 0
+    font-weight: 300
+  .subtitle
+    .bg
+      padding: 0 0.75em 0 0.75em
+      background-color: $background
+    position: absolute
+    margin: 0
+    top: -4.3em
+    font-size: 0.9em
+    font-weight: 300
+    color: $medium-grey
+    text-transform: uppercase
+    width: 100%
+
+.thumbnails
+  list-style: none
+  margin: 0
+  padding: 0
+  li
+    display: inline
+    a
+      border: none
+
+.thumbnail img
+  width: 90%
+  margin: 0 0.5em 1em 0.5em
+  padding: 0.5em
+  border: 1px solid $light-grey
+
+.full-size img
+  width: 90%
+  margin: 0 0.5em 1em 0.5em
+  padding: 0.5em
+  border: 1px solid $light-grey
+
+.description
+  margin: 0
+  padding: 0
+  font-size: 0.8em
+  text-transform: uppercase
+
+.navigation
+  list-style: none
+  margin: 2em 0 0 0
+  padding: 0
+  li
+    text-transform: uppercase
+    font-size: 0.8em
+    display: inline
+    margin: 0 1em 0 1em
+
+.footer
+  clear: both
+  border-top: 1px solid $light-grey
+  margin: 2.5em 0 0 0
+  padding: 2.3em 0 4em 0
+
+.colored
+  color: $highlight
+
+.copyright
+  font-size: 0.8em
+  line-height: 1.65
+  text-transform: uppercase
+
+@media screen and (min-width: 465px)
+  .thumbnail img
+    width: 11.282em
+
+@media screen and (min-width: 768px)
+  body
+    border-top: 4px solid $highlight
+    font-size: 125%
+    line-height: 1.8
+
+  .wrapper
+    padding: 0 2em 0 2em
+    max-width: 33em
+
+  .thumbnail img
+    width: 8.765em

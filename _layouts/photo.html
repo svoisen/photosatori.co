@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<span data-picture data-alt="{{ page.description }}" class="full-size">
+  <span data-src="http://s3.amazonaws.com/photosatori/{{ page.filename }}.jpg" /></span>
+  <span data-src="http://s3.amazonaws.com/photosatori/{{ page.filename }}@2x.jpg" data-media="(-webkit-min-device-pixel-ratio: 2.0), (min-resolution: 192dppx)"></span>
+  <noscript>
+    <img src="http://s3.amazonaws.com/photosatori/{{ page.filename }}.jpg" alt="{{ page.description }}" />
+  </noscript>
+</span>
+
+<p class="description">{{ page.description }}</p>
+
+<ul class="navigation">
+  <li><a href="{{ page.previous.url }}" title="Previous photo">&larr; Prev</a></li>
+  <li><a href="/" title="Return home">Home</a></li>
+  <li><a href="{{ page.next.url }}" title="Next photo">Next &rarr;</a></li>
+</ul>

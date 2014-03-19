@@ -1,0 +1,24 @@
+---
+layout: default
+title: Gallery
+---
+
+<hgroup class="content-header">
+  <h3 class="subtitle"><span class="bg">Landscapes by Sean Voisen</span></h3>
+</hgroup>
+
+<ul class="thumbnails">
+  {% for post in site.posts reversed %}
+  <li>
+    <a href="{{ post.url }}">
+      <span data-picture data-alt="{{ post.description }}" class="thumbnail">
+        <span data-src="http://s3.amazonaws.com/photosatori/thumbnails/{{ post.filename }}.jpg" /></span>
+        <span data-src="http://s3.amazonaws.com/photosatori/thumbnails/{{ post.filename }}@2x.jpg" data-media="(-webkit-min-device-pixel-ratio: 2.0), (min-resolution: 192dppx)"></span>
+        <noscript>
+          <img src="http://s3.amazonaws.com/photosatori/thumbnails/{{ post.filename }}.jpg" alt="{{ post.description }}" />
+        </noscript>
+      </span>
+    </a>
+  </li>
+  {% endfor %}
+</ul>
